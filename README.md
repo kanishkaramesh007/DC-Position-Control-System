@@ -55,20 +55,20 @@ The equation (1) can be written as <br>
 5.	Analyse the output in open loop and closed loop.
 
 ## Program
-Kt=0.024
-J=3.2284e-6
-B=3.5077e-6
-Rf=4
-Lf=2.75e-6
-s=tf('s')
-ol_sys=Kt/((J*s*s+B*s)*(Rf+Lf*s))
-subplot(2,1,1)
-step(ol_sys)
-title('open loop response')
-cl_sys=feedback(ol_sys,1)
-subplot(2,1,2)
-step(cl_sys)
-title('closed loop response')
+Kt=0.024 <br>
+J=3.2284e-6 <br>
+B=3.5077e-6 <br>
+Rf=4 <br>
+Lf=2.75e-6 <br>
+s=tf('s') <br>
+ol_sys=Kt/((J*s*s+B*s)*(Rf+Lf*s)) <br>
+subplot(2,1,1) <br>
+step(ol_sys) <br>
+title('open loop response') <br>
+cl_sys=feedback(ol_sys,1) <br>
+subplot(2,1,2) <br>
+step(cl_sys) <br>
+title('closed loop response') <br>
 
 ## Output
 <img width="692" height="628" alt="Screenshot 2025-10-06 194236" src="https://github.com/user-attachments/assets/a506cec6-0669-45fa-b6b9-d0bdf412d197" />
